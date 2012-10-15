@@ -5,8 +5,8 @@
  * (c) Matthias Breddin / Lunetics Networks
  *
  * @author Matthias Breddin <mb@lunetics.com>
- * @link(https://github.com/lunetics/LuneticsZodiacBundle)
- * @link(http://www.lunetics.com
+ * @link(https://github.com/lunetics/ZodiacBundle)
+ * @link(http://www.lunetics.com))
  *
  * For the full copyright and license information, please read the LICENSE
  * file that was distributed with this source code.
@@ -27,7 +27,7 @@ class ZodiacCalculator
     protected $date;
 
     /**
-     * They array indexkey for a zodiac
+     * The array indexkey for a zodiac
      *
      * @var integer
      */
