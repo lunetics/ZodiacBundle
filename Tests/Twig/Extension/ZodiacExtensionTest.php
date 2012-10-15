@@ -25,7 +25,7 @@ use Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension;
  *
  * @author Matthias Breddin <mb@lunetics.com>
  *
- * @covers ZodiacExtension
+ * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension
  */
 class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
 {
@@ -63,7 +63,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacString
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacString
      */
     public function testFilterMethodZodiacString()
     {
@@ -71,7 +71,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacString
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacString
      */
     public function testFilterMethodZodiacStringParamsTranslationkey()
     {
@@ -79,7 +79,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacString
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacString
      */
     public function testFilterMethodZodiacStringWithType()
     {
@@ -87,7 +87,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacString
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacString
      */
     public function testFilterMethodZodiacStringParamsTypeAndTranslationkey()
     {
@@ -95,7 +95,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacString
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacString
      */
     public function testFilterMethodZodiacStringInvalidType()
     {
@@ -104,7 +104,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacString
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacString
      */
     public function testFilterMethodZodiacRawString()
     {
@@ -112,7 +112,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacString
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacString
      */
     public function testFilterMethodZodiacRawStringWithType()
     {
@@ -120,7 +120,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacSign
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacSign
      */
     public function testFilterMethodZodiacSign()
     {
@@ -128,7 +128,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacSign
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacSign
      */
     public function testFilterMethodZodiacSignWithType()
     {
@@ -136,7 +136,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacSign
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacSign
      */
     public function testFilterMethodZodiacSignWithFormat()
     {
@@ -144,7 +144,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacSign
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacSign
      */
     public function testFilterMethodZodiacSignWithTypeAndFormat()
     {
@@ -152,7 +152,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacSign
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacSign
      */
     public function testFilterMethodZodiacSignWithInvalidType()
     {
@@ -162,7 +162,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacExtension::getZodiacSign
+     * @covers Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension::getZodiacSign
      */
     public function testFilterMethodZodiacSignWithInvalidFormat()
     {

@@ -21,12 +21,12 @@ use Lunetics\ZodiacBundle\Zodiac\ZodiacCalculator;
  *
  * @author Matthias Breddin <mb@lunetics.com>
  *
- * @covers ZodiacCalculator
+ * @covers Lunetics\ZodiacBundle\Zodiac\ZodiacCalculator
  */
 class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @covers ZodiacCalculator::getZodiac
+     * @covers Lunetics\ZodiacBundle\Zodiac\ZodiacCalculator::getZodiac
      */
     public function testZodiacStringWithDifferentDates()
     {
@@ -38,7 +38,7 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacCalculator::getZodiac
+     * @covers Lunetics\ZodiacBundle\Zodiac\ZodiacCalculator::getZodiac
      */
     public function testZodiacDateTimeObject()
     {
@@ -49,7 +49,7 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider zodiacDates
-     * @covers ZodiacCalculator::getZodiac
+     * @covers Lunetics\ZodiacBundle\Zodiac\ZodiacCalculator::getZodiac
      */
     public function testZodiacString($date, $sign)
     {
@@ -58,7 +58,7 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacCalculator::getZodiacSignUnicode
+     * @covers Lunetics\ZodiacBundle\Zodiac\ZodiacCalculator::getZodiacSignUnicode
      */
     public function testZodiacSignUnicode()
     {
@@ -67,7 +67,7 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacCalculator::getZodiacSignHtml
+     * @covers Lunetics\ZodiacBundle\Zodiac\ZodiacCalculator::getZodiacSignHtml
      */
     public function testZodiacSignHtml()
     {
@@ -76,7 +76,7 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacCalculator::getZodiacTranslatable
+     * @covers Lunetics\ZodiacBundle\Zodiac\ZodiacCalculator::getZodiacTranslatable
      */
     public function testZodiacStringTranslatable()
     {
@@ -89,7 +89,7 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacCalculator::getChineseZodiac
+     * @covers Lunetics\ZodiacBundle\Zodiac\ZodiacCalculator::getChineseZodiac
      */
     public function testChineseZodiacString()
     {
@@ -98,7 +98,7 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacCalculator::getChineseZodiacTranslatable
+     * @covers Lunetics\ZodiacBundle\Zodiac\ZodiacCalculator::getChineseZodiacTranslatable
      */
     public function testChineseZodiacStringTranslatable()
     {

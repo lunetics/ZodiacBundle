@@ -22,12 +22,12 @@ use Lunetics\ZodiacBundle\Templating\Helper\ZodiacHelper;
  *
  * @author Matthias Breddin <mb@lunetics.com>
  *
- * @covers ZodiacHelper
+ * @covers Lunetics\ZodiacBundle\Templating\Helper\ZodiacHelper
  */
 class ZodiacHelperTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @covers ZodiacHelper::render
+     * @covers Lunetics\ZodiacBundle\Templating\Helper\ZodiacHelper::renderZodiac
      */
     public function testRenderZodiac()
     {
@@ -40,7 +40,7 @@ class ZodiacHelperTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacHelper::render
+     * @covers Lunetics\ZodiacBundle\Templating\Helper\ZodiacHelper::renderZodiac
      */
     public function testRenderZodiacImage()
     {
@@ -53,7 +53,7 @@ class ZodiacHelperTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers ZodiacHelper::render
+     * @covers Lunetics\ZodiacBundle\Templating\Helper\ZodiacHelper::renderZodiac
      */
     public function testRenderZodiacInvalid()
     {
