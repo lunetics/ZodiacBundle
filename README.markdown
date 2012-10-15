@@ -1,6 +1,6 @@
 Zodiac Bundle for Symfony 2
 ===========================
-[![Build Status](https://secure.travis-ci.org/Lunetics/LuneticsBundle.png?branch=master)](http://travis-ci.org/Lunetics/LuneticsBundle)
+[![Build Status](https://secure.travis-ci.org/lunetics/ZodiacBundle.png)](http://travis-ci.org/lunetics/ZodiacBundle)
 
 The Lunetics Zodiac Bundle adds Twig Filters and Twig Methods to get a Zodiac for a given date. This Bundle is tested with Symfony 2.1 only.
 
