@@ -20,9 +20,14 @@ use Lunetics\ZodiacBundle\Zodiac\ZodiacCalculator;
  * PhpUnit Class for Testing the Zodiac Calculator
  *
  * @author Matthias Breddin <mb@lunetics.com>
+ *
+ * @covers ZodiacCalculator
  */
 class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @covers ZodiacCalculator::getZodiac
+     */
     public function testZodiacStringWithDifferentDates()
     {
         $zodiac = new ZodiacCalculator('2012-04-19');
@@ -32,6 +37,9 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('taurus', $zodiac->getZodiac());
     }
 
+    /**
+     * @covers ZodiacCalculator::getZodiac
+     */
     public function testZodiacDateTimeObject()
     {
         $date = new \DateTime('23. November 1980');
@@ -41,6 +49,7 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider zodiacDates
+     * @covers ZodiacCalculator::getZodiac
      */
     public function testZodiacString($date, $sign)
     {
@@ -48,18 +57,27 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($sign, $zodiac->getZodiac());
     }
 
+    /**
+     * @covers ZodiacCalculator::getZodiacSignUnicode
+     */
     public function testZodiacSignUnicode()
     {
         $zodiac = new ZodiacCalculator('06.03.1980');
         $this->assertEquals('♓', $zodiac->getZodiacSignUnicode());
     }
 
+    /**
+     * @covers ZodiacCalculator::getZodiacSignHtml
+     */
     public function testZodiacSignHtml()
     {
         $zodiac = new ZodiacCalculator('06.03.1980');
         $this->assertEquals('&#9811;', $zodiac->getZodiacSignHtml());
     }
 
+    /**
+     * @covers ZodiacCalculator::getZodiacTranslatable
+     */
     public function testZodiacStringTranslatable()
     {
         $zodiac = new ZodiacCalculator('1.1.2011');
@@ -70,12 +88,18 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($ns . '.astronomical.' . $zodiac->getZodiac(), $zodiac->getZodiacTranslatable());
     }
 
+    /**
+     * @covers ZodiacCalculator::getChineseZodiac
+     */
     public function testChineseZodiacString()
     {
         $zodiac = new ZodiacCalculator('1980');
         $this->assertEquals('monkey', $zodiac->getChineseZodiac());
     }
 
+    /**
+     * @covers ZodiacCalculator::getChineseZodiacTranslatable
+     */
     public function testChineseZodiacStringTranslatable()
     {
         $zodiac = new ZodiacCalculator('1.1.2011');
@@ -86,6 +110,11 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($ns . '.chinese.' . $zodiac->getChineseZodiac(), $zodiac->getChineseZodiacTranslatable());
     }
 
+    /**
+     * Dataprovider with dates and corresponding zodiac signs
+     *
+     * @return array
+     */
     public function zodiacDates()
     {
         return array(

@@ -21,10 +21,14 @@ use Lunetics\ZodiacBundle\Templating\Helper\ZodiacHelper;
  * PhpUnit Class for Zodiac Helper
  *
  * @author Matthias Breddin <mb@lunetics.com>
+ *
+ * @covers ZodiacHelper
  */
 class ZodiacHelperTest extends \PHPUnit_Framework_TestCase
 {
-
+    /**
+     * @covers ZodiacHelper::render
+     */
     public function testRenderZodiac()
     {
         $templating = $this->getTemplatingMock();
@@ -35,6 +39,9 @@ class ZodiacHelperTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('LuneticsZodiacBundle:Zodiac:render_string.html.twig', $helper->renderZodiac('06.03.1980'));
     }
 
+    /**
+     * @covers ZodiacHelper::render
+     */
     public function testRenderZodiacImage()
     {
         $templating = $this->getTemplatingMock();
@@ -45,6 +52,9 @@ class ZodiacHelperTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('LuneticsZodiacBundle:Zodiac:render_image.html.twig', $helper->renderZodiac('06.03.1980', 'image'));
     }
 
+    /**
+     * @covers ZodiacHelper::render
+     */
     public function testRenderZodiacInvalid()
     {
         $this->setExpectedException('\InvalidArgumentException');
@@ -53,6 +63,11 @@ class ZodiacHelperTest extends \PHPUnit_Framework_TestCase
         $helper->renderZodiac('06.03.1980', 'invalid');
     }
 
+    /**
+     * Returns a mock for Templating
+     *
+     * @return \PHPUnit_Framework_MockObject_MockObject|Templating
+     */
     public function getTemplatingMock()
     {
         return $this->getMockBuilder('Symfony\Component\Templating\EngineInterface')->disableOriginalConstructor()->getMock();
