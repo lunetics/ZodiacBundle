@@ -18,7 +18,7 @@
         "symfony/yaml": "2.1.*",
         "symfony/locale": "2.1.*",
         "symfony/templating": "2.1.*",
-        "twig/twig:": "1.*"
+        "twig/twig": "1.*"
     },
     "autoload": {
         "psr-0": { "Lunetics\\ZodiacBundle": "" }
