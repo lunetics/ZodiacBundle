@@ -1,0 +1,28 @@
+lunetics_zodiac:
+    # Astronomical
+    astronomical:
+        aries: Aries
+        taurus: Taurus
+        gemini: Gemini
+        cancer: Cancer
+        leo: Leo
+        virgo: Virgo
+        libra: Libra
+        scorpio: Scorpio
+        sagittarius: Sagittarius
+        capricorn: Capricorn
+        aquarius: Aquarius
+        pisces: Pisces
+    chinese:
+        monkey: Monkey
+        rooster: Rooster
+        dog: Dog
+        pig: Pig
+        rat: Rat
+        ox: Ox
+        tiger: Tiger
+        rabbit: Rabbit
+        dragon: Dragon
+        serpent: Serpent
+        horse: Horse
+        goat: Goat

@@ -1,0 +1,28 @@
+lunetics_zodiac:
+    # Astronomical
+    astronomical:
+        aries: Widder
+        taurus: Stier
+        gemini: Zwilling
+        cancer: Krebs
+        leo: Löwe
+        virgo: Jungfrau
+        libra: Waage
+        scorpio: Skorpion
+        sagittarius: Schütze
+        capricorn: Steinbock
+        aquarius: Wassermann
+        pisces: Fische
+    chinese:
+        monkey: Affe
+        rooster: Hahn
+        dog: Hund
+        pig: Schwein
+        rat: Ratte
+        ox: Büffel
+        tiger: Tiger
+        rabbit: Hase
+        dragon: Drache
+        serpent: Schlange
+        horse: Pferd
+        goat: Ziege

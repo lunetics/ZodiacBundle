@@ -1,0 +1,28 @@
+lunetics_zodiac:
+    # Astronomical
+    astronomical:
+        aries: Vædderen
+        taurus: Tyren
+        gemini: Tvillingerne
+        cancer: Krebsen
+        leo: Løven
+        virgo: Jomfruen
+        libra: Vægten
+        scorpio: Skorpionen
+        sagittarius: Skytten
+        capricorn: Stenbukken
+        aquarius: Vandbæreren
+        pisces: Fiskene
+    chinese:
+        monkey: Abe
+        rooster: Hane
+        dog: Hund
+        pig: Gris
+        rat: Rotte
+        ox: Okse
+        tiger: Tiger
+        rabbit: Hare
+        dragon: Drage
+        serpent: Slange
+        horse: Hest
+        goat: Får
