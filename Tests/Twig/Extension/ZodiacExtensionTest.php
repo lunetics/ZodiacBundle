@@ -105,7 +105,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
 
     public function testFilterMethodZodiacSignWithFormat()
     {
-        $this->assertEquals('&#9811;', $this->twig->render("{{ date|zodiac_sign({'format':'html'}) }}", array('date' => new \DateTime('01.01.1980'))));
+        $this->assertEquals('&#9811;', $this->twig->render("{{ date|zodiac_sign({'format':'html'}) }}", array('date' => new \DateTime('06.03.1980'))));
     }
 
     public function testFilterMethodZodiacSignWithTypeAndFormat()
