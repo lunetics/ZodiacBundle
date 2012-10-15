@@ -1,6 +1,6 @@
 {
     "name": "lunetics/zodiac-bundle",
-    "description": "A Bundle for displaying the zodiac for a fate",
+    "description": "A Bundle for displaying the zodiac for a Date",
     "keywords": ["zodiac", "bundle", "astronomical", "horoscope"],
     "type": "symfony-bundle",
     "license": "MIT",
@@ -17,7 +17,8 @@
         "symfony/framework-bundle": "2.1.*",
         "symfony/yaml": "2.1.*",
         "symfony/locale": "2.1.*",
-        "symfony/templating": "2.1.*"
+        "symfony/templating": "2.1.*",
+        "twig/twig:": "1.*"
     },
     "autoload": {
         "psr-0": { "Lunetics\\ZodiacBundle": "" }
