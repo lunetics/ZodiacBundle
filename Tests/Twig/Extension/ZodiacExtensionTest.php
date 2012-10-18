@@ -16,6 +16,7 @@ namespace Lunetics\ZodiacBundle\Tests\Entity;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Translation\Translator;
+use Symfony\Component\Translation\MessageSelector;
 use Symfony\Component\Translation\Loader\YamlFileLoader;
 
 use Lunetics\ZodiacBundle\Twig\Extension\ZodiacExtension;
@@ -42,7 +43,7 @@ class ZodiacExtensionTest extends \PHPUnit_Framework_TestCase
     {
         $locale = 'en';
 
-        $translator = new Translator($locale);
+        $translator = new Translator($locale, new MessageSelector());
         $translator->addLoader('yaml', new YamlFileLoader());
 
         $ressource = __DIR__ . '/../../../Resources/translations/LuneticsZodiacBundle.en.yml';
