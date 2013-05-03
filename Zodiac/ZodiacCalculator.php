@@ -249,7 +249,7 @@ class ZodiacCalculator
         $date = $this->date->getTimestamp();
         $year = $this->date->format('Y');
         foreach ($this->zodiacArray as $zodiac) {
-            if ($date >= strtotime($year . '-' . $zodiac['start']) && $date <= strtotime($year . '-' . $zodiac['end'])) {
+            if ($date >= strtotime($year . '-' . $zodiac['start']) && $date <= strtotime($year . '-' . $zodiac['end'] . ' 23:59:59')) {
                 return $zodiac['key'];
             }
         }
