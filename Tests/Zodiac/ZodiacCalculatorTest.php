@@ -166,6 +166,7 @@ class ZodiacCalculatorTest extends \PHPUnit_Framework_TestCase
             array('1980-02-21', 'pisces'),
             array('1980-03-19', 'pisces'),
             array('1980-03-20', 'pisces'),
+            array('1962-02-19 23:59:59', 'aquarius'),
         );
     }
 }
