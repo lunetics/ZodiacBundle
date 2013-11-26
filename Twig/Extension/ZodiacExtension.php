@@ -124,7 +124,7 @@ class ZodiacExtension extends \Twig_Extension
             }
         }
 
-        throw new \Twig_Error_Runtime(sprintf('"%s" is an invalid zodiac type.', $type));
+        throw new \Twig_Error_Runtime(sprintf('"%s" is an invalid zodiac type.', $params['type']));
     }
 
     /**
