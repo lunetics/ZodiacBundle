@@ -1,0 +1,28 @@
+lunetics_zodiac:
+    # Astronomical
+    astronomical:
+        aries: 牡羊座
+        taurus: 牡牛座
+        gemini: 双子座
+        cancer: 蟹座
+        leo: 獅子座
+        virgo: 乙女座
+        libra: 天秤座
+        scorpio: 蠍座
+        sagittarius: 射手座
+        capricorn: 山羊座
+        aquarius: 水瓶座
+        pisces: 魚座
+    chinese:
+        monkey: 申
+        rooster: 酉
+        dog: 戌
+        pig: 亥
+        rat: 子
+        ox: 丑
+        tiger: 寅
+        rabbit: 卯
+        dragon: 辰
+        serpent: 巳
+        horse: 午
+        goat: 未
