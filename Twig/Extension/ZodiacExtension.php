@@ -140,9 +140,10 @@ class ZodiacExtension extends \Twig_Extension
     public function getZodiacSign($date, $params = array())
     {
         $params = array_merge($this->params, $params);
+        $format = ucfirst($params['format']);
         $zodiac = new ZodiacCalculator($date);
-        if (method_exists($zodiac, 'get' . ucfirst($params['type']) . 'ZodiacSign' . ucfirst($params['format']))) {
-            return $zodiac->{'get' . ucfirst($params['type']) . 'ZodiacSign' . ucfirst($params['format'])}();
+        if (method_exists($zodiac, 'get' . ucfirst($params['type']) . 'ZodiacSign' . $format)) {
+            return $zodiac->{'get' . ucfirst($params['type']) . 'ZodiacSign' . $format}();
         }
         throw new \Twig_Error_Runtime(sprintf('Format "%s" is an invalid zodiac sign format or not yet implemented.', $format));
     }
