@@ -15,7 +15,7 @@ Installation
 Documentation
 -------------
 Zodiac Twig Filter Usage
-[Read the Documentation](ZodiacBundle/tree/master/Resources/doc/filter_usage.md)
+[Read the Documentation](Resources/doc/filter_usage.md)
 
 Zodiac Twig Method Usage
 [Read the Documentation](ZodiacBundle/tree/master/Resources/doc/method_usage.md)
